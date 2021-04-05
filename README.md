@@ -1,5 +1,5 @@
 # HDWallet
 
 ### RUN Commands
-* npm i
+* npm install
 * node AddressGeneration.js
