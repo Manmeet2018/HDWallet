@@ -1,0 +1,31 @@
+{
+  "name": "hdwallet",
+  "version": "1.0.0",
+  "description": "this is a test wallet which is based on HD(Hierarchical Deterministic) ",
+  "main": "app.js",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "bs58check": "^2.1.2",
+    "create-hash": "^1.2.0",
+    "crypto": "^1.0.1",
+    "hdkey": "^2.0.1",
+    "pbkdf2": "^3.1.1",
+    "randombytes": "^2.1.0",
+    "secp256k1": "^4.0.2",
+    "unorm": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manmeet2018/HDWallet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manmeet2018/HDWallet/issues"
+  },
+  "homepage": "https://github.com/Manmeet2018/HDWallet#readme"
+}
