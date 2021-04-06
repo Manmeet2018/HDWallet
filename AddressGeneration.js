@@ -9,13 +9,14 @@ const mnemonic = generateMnemonic(wordList); //generates mnemonic string
 console.log(mnemonic);
 const seed = mnemonicToSeed(mnemonic); //creates seed buffer
 console.log("Seed: " + seed);
-// console.log("mnemonic: " + mnemonic);
+
 const root = hdkey.fromMasterSeed(seed);
 const masterPrivateKey = root.privateKey.toString("hex");
 console.log("masterPrivateKey: " + masterPrivateKey);
 const addrIndex = 0;
+
 const addrNode = root.derive(`m/44'/0'/0'/0/${addrIndex}`);
-console.log("addrNodePublicKey: " + addrNode._publicKey);
+console.log("addrNodePublicKey: " + addrNode._publicKey.toString("hex"));
 
 const step1 = addrNode._publicKey;
 const step2 = createHash("sha256").update(step1).digest();
